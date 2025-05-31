@@ -29,7 +29,7 @@ https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plu
 ## 工作流
 
 
-![hiresfix_esrgan_workflow](./hiresfix_esrgan_workflow.json)
+[hiresfix_esrgan_workflow](./hiresfix_esrgan_workflow.json)
 
 
 ### Non latent Upscaling  非潜在升级

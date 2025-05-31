@@ -13,6 +13,45 @@ Stable Diffusion v1.5  稳定扩散 v1.5
 Stable Diffusion XL  稳定扩散 XL
 Flux.1 dev  Flux.1 开发
 
+## 对比
+
+
+Stable Diffusion v1.5
+Stable Diffusion XL
+Flux.1 dev  Flux.1
+Realistic Vision v5
+Dreamshaper
+Juggernaut XL
+Pony Diffusion
+Anything V3 
+Deliberate v2
+F222
+ChilloutMix
+Protogen v2.2
+GhostMix
+Waifu Diffusion
+Inkpunk Diffusion
+
+| 模型名称                  | 是否基础模型 | 基础模型来源                | 主要特点                       | 适用场景          |                                                                                       |
+| --------------------- | ------ | --------------------- | -------------------------- | ------------- | ------------------------------------------------------------------------------------- |
+| Stable Diffusion v1.5 | 是      | -                     | 开源、广泛支持、社区资源丰富,推理慢             | 通用图像生成        |     默认图像大小 512×512 像素 |
+| Stable Diffusion XL   | 是      | -                     | 二阶段模型（Base + Refiner），高分辨率支持、双文本编码器提升语义理解、细节更丰富        | 高质量图像生成       |  高分辨率（1024×1024）    |
+| Flux.1 Dev            | 否      | 自研（Flux架构）            | 120亿参数、细节表现优异（手部、文字排版）、支持高分辨率和写实风格  | 写实图像生成        |   默认图像大小 1024×1024 像素   |
+| Realistic Vision v5   | 否      | Stable Diffusion v1.5 | 强调写实风格、适合人像和摄影风格,修复面部伪影，生成真实人物、物体或场景           | 写实人像、摄影风格图像生成 |                                        |
+| Dreamshaper           | 否      | Stable Diffusion v1.5 | 风格多样、适合艺术创作（超现实→写实）和插画风格                | 艺术风格图像生成      |                                       |
+| Juggernaut XL         | 否      | Stable Diffusion XL   | 细节丰富、真实感、适合复杂场景,特写肖像专精，电影级光影/纹理；适合时尚摄影                | 高质量复杂场景图像生成   |           |
+| Pony Diffusion        | 否      | Stable Diffusion v1.5 | 特定动漫风格、风格独特,拟人化/兽人主题生成,角色识别强               | 小马题材图像生成      |                     |
+| Anything V3           | 否      | Stable Diffusion v1.5 | 动漫风格强、适合二次元内容              | 动漫风格图像生成      |        使用 danbooru 标签     |
+| Deliberate v2         | 否      | Stable Diffusion v1.5 | 高质量、细节丰富、适合写实和艺术结合             | 写实与艺术结合图像生成   |                      |
+| F222                  | 否      | Stable Diffusion v1.5 | 人体结构优化,风格独特、适合创意内容，女性肖像，正确身体部位,裸体照片                | 创意风格图像生成      |                            |
+| ChilloutMix           | 否      | Stable Diffusion v1.5 | 亚洲面孔真人生成代表，肤色/五官更自然,写实风格强、适合人像和摄影风格，裸体照片            | 写实人像、摄影风格图像生成 |                             |
+| Protogen v2.2         | 否      | Stable Diffusion v1.5 | 科幻/未来风主题,风格多样、适合多种内容，高雅插画，动漫风格                | 多风格图像生成       |                     |
+| GhostMix              | 否      | Stable Diffusion v1.5 | 灵异/暗黑风格化,风格独特、适合创意内容,攻壳机动队风格，有用於生成半人半機及機器人                | 创意风格图像生成      |                          |
+| Waifu Diffusion       | 否      | Stable Diffusion v1.4 | 动漫风格强、适合二次元内容,现被 Anything V3 超越              | 动漫风格图像生成      |                         |
+| Inkpunk Diffusion     | 否      | Stable Diffusion v1.5 | 墨水朋克、涂鸦朋克风，粗线条+高对比色彩；适合街头艺术          | 独特艺术风格图像生成    | 使用关键词：nvinkpunk |
+
+
+
 ## Stable diffusion v1.5  稳定扩散 v1.5
 
 

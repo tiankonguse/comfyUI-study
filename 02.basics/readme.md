@@ -48,6 +48,44 @@ KSampler 接受以下输入：
 您也可以将实际图像传递给 KSampler 而执行 img2img。
 
 
+### Ksampler中的denoise
+
+#### 在图生图（Image-to-Image）中：
+
+当使用 ComfyUI 进行图生图操作时，Denoise 决定新生成的图像与原始图像的相似度。
+
+Denoise = 0.2-0.4（低）：轻微修改，保留原始图像大部分内容，适合修复细节或微调色彩。例如：去除噪点、优化图像细节、颜色调整。
+Denoise = 0.5-0.7（中）：适度更改，生成的图像在内容和风格上有一定变化。例如：更换背景、调整风格（如漫画风、油画风）。
+Denoise = 0.8-1.0（高）：大幅度改动，生成的图像与输入图像差异较大，接近重新生成。适合进行创意生成或大幅度内容改造。
+
+#### 在局部修复（Inpainting）中：
+
+当使用遮罩（Mask）对图像进行局部修复时，Denoise 控制新内容的填充程度：
+
+Denoise 低：适合补全缺失的细节，填充较小区域，如修复缺损部分。
+Denoise 高：适合对局部区域进行完全替换，如更换人物面部或背景。
+
+
+#### 在超分辨率（Upscaling）中：
+
+
+在对低分辨率图像进行放大时，Denoise 控制放大后图像的锐化程度：
+
+Denoise 低：仅对图像进行分辨率提升，保持原始内容。
+Denoise 高：结合 AI 进行重新渲染，创造更多细节，适合风格化放大。
+
+
+### 总结：
+
+| 任务类型 | 推荐 Denoise 值 |  适用场景 | 
+|:-:|:-:|:-:|
+| 图像微调 | 0.2 - 0.4        | 颜色调整、修复模糊部分 | 
+| 风格转换  | 0.5 - 0.7        |  生成不同风格或改变细节 | 
+| 内容重塑  | 0.8 - 1.0        |  大幅度更改图像，几乎生成全新内容 | 
+| 局部修复（Inpainting） | 0.3 - 0.6 | 局部修改或填充，保留整体风格 | 
+| 生成新图像  |  1.0  |  依靠文本提示完全重新生成新图像  |
+
+
 ## CFG scale  CFG 尺度
 
 分类器自由指导尺度是一个参数，用于控制模型应在多大程度上尊重您的提示。
@@ -193,6 +231,72 @@ Negative prompting allows precise control over colors and content. While the mai
 负面提示可以精确控制颜色和内容。主提示塑造了整体形象，而负面提示则通过过滤掉不想要的元素、纹理或色调来完善形象，从而达到聚焦、精致的效果。
  This enables more control over the final image, ensuring that distractions are minimized and that the output aligns closely with your intended vision.
 这样可以更好地控制最终图像，确保最大限度地减少干扰，并确保输出与您的预期视觉紧密一致。
+
+
+## prompt 提示词的基本结构
+
+
+### 主体描述（Subject）
+
+定义图像的主要内容，如人物、动物、风景等。例子：a beautiful sunset over the mountains（一场美丽的山脉日落）
+
+### 细节描述（Details）
+
+增加对主体的详细描述，例如姿势、颜色、特征等。例子：golden lighting, vibrant colors, high resolution, ultra-detailed（金色光线，鲜艳色彩，高分辨率，超细节）
+
+### 风格描述（Style）
+
+控制图像的艺术风格，例如写实、动漫、油画等。例子：cinematic, cyberpunk, fantasy, 8K resolution（电影级，赛博朋克，幻想风，8K分辨率）
+
+
+### 氛围和情绪（Mood & Atmosphere）
+
+设定图像的整体氛围，如温暖、黑暗、梦幻等。例子：dramatic lighting, moody, serene（戏剧性光影，情绪化，宁静）
+
+
+### 摄影/艺术相关（Camera & Art References）
+
+通过相机参数或艺术流派描述拍摄方式。例子：soft focus, DSLR, film grain, Rembrandt style（柔焦，单反，胶片颗粒，伦勃朗风格）
+
+## 编写提示词的常见技巧
+
+### 从一般到具体
+
+提示词的编写应遵循 “从整体到细节” 的原则，先描述大场景，再添加细节
+
+
+### 使用逗号分隔
+
+在 ComfyUI 中，提示词通常使用 逗号 , 分隔不同的描述元素，以提高解析清晰度
+
+
+### 强调关键部分
+
+使用括号 `()` 可以增加某个描述的权重，而 `[]` 则可以降低其权重
+
+
+### 避免过度堆砌
+
+虽然可以添加多个细节描述，但过多的提示词可能导致模型混淆，影响图像生成的质量。保持简洁清晰，通常 10-20 个关键字最佳。
+
+
+### 提示词示例
+
+主题：a beautiful woman
+
+细节：blonde hair, blue eyes
+
+风格：cinematic photography
+
+质量：4K resolution, highly detailed
+
+
+### Lora触发词
+
+
+LoRA 触发词用于激活特定的 LoRA 微调权重，例如特定的绘画风格或人物特征
+
+轻量级模型微调技术，允许用户在不重新训练整个模型的情况下，通过加载小型的额外权重来适配特定风格或对象
 
 
 ## 附录
