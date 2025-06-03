@@ -59,7 +59,7 @@ ComfyUI/
 输出结果
 
 
-![](./ComfyUI_01683_.png)  
+![](./controlnet_pos_one.png)  
 
 
 

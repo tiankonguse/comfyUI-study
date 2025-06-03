@@ -10,6 +10,12 @@
 ControlNet 模型通过引入多模态输入条件（如边缘检测图、深度图和姿势关键点），显著提高了图像生成的可控性和再现细节的能力。
 
 
+输入条件：用户手绘的草图（涂鸦/线条图）。
+适用场景：用户希望用极简线条表达构图/动作/构思。常用于快速草图转图像、交互式创作等。
+优点：高度自由，适合创意表达。可以完全自定义结构，不依赖原始图像。
+缺点：线条信息稀疏时，模型可能难以理解意图。
+
+
 ## 下载
 
 dreamCreationVirtual3DECommerce_v10.safetensors https://civitai.com/api/download/models/731340?type=Model&format=SafeTensor&size=full&fp=fp16
@@ -46,7 +52,7 @@ ComfyUI/
 输出图像:
 
 
-![](./ComfyUI_01681_.png)
+![](./controlnet_scribble_one.png)
 
 
 

@@ -47,12 +47,9 @@ prompt: mirror selfie, Chinese beautiful girl taking a photo while showering, si
 输出图片:
 
 
-![](./ComfyUI_01079_.png)
+![](./pass_txt2img_one.png)
+![](./pass_txt2img_two.png)
+![](./pass_txt2img_three.png)
 
 
 
-
-![](./ComfyUI_01081_.png)
-
-
-![](./ComfyUI_01087_.png)

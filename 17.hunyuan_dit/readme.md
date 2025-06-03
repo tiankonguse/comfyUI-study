@@ -25,7 +25,7 @@ hunyuan_dit_1.2.safetensors : https://huggingface.co/comfyanonymous/hunyuan_dit_
 
 使用中文进行生成图片即可。  
 
-![](./ComfyUI_01484_.png)
+![](./hunyuan_dit_one.png)
 
 
 

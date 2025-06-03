@@ -49,7 +49,7 @@
 ### 输出图片
 
 
-![](./ComfyUI_01745_.png)
+![](./controlnets_mixing_one.png)
 
 
 

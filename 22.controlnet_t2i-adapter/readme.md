@@ -125,7 +125,7 @@ masterpiece, best quality, photorealistic, 8k resolution, detailed texture, soft
 ### 输出图片：
 
 
-![](./ComfyUI_01743_.png)
+![](./controlnet_t2i_adapter_one.png)
 
 
 ## 建议

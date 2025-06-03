@@ -23,12 +23,13 @@ evening sunset scenery blue sky nature, glass bottle with a fizzy ice cold freez
 输入: 文生图的自拍图，基于这个图进一步生成新的图片。  
 
 
-![](../03.SC-txt2img/ComfyUI_01024_.png)
+![](../03.SC-txt2img/txt2img_two.png)
 
 
 输出:  
 
-![](./ComfyUI_01038_.png)
+
+![](./img_remixing_one.png)
 
 
 
@@ -38,7 +39,8 @@ evening sunset scenery blue sky nature, glass bottle with a fizzy ice cold freez
 输入: 文生图的自拍图，基于这个图进一步生成新的图片。
 
 
-![](./ComfyUI_01040_.png)
+
+![](./img_remixing_two.png)
 
 
 

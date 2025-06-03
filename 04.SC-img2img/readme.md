@@ -29,7 +29,8 @@ evening sunset scenery blue sky nature, glass bottle with a fizzy ice cold freez
 
 输出:  
 
-![](./ComfyUI_01028_.png)
+
+![](./img2img_one.png)
 
 
 
@@ -43,12 +44,12 @@ mirror selfie, Chinese beautiful girl taking a photo while showering, sitting on
 输入图片:  文生图的自拍图，基于这个图进一步生成新的图片。  
 
 
-![](../03.SC-txt2img/ComfyUI_01024_.png)
+![](../03.SC-txt2img/txt2img_two.png)
 
 
 输入:  
 
-![](./ComfyUI_01030_.png)
+![](./img2img_two.png)
 
 
 ## Next 

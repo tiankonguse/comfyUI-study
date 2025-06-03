@@ -34,7 +34,7 @@ evening sunset scenery blue sky nature, glass bottle with a fizzy ice cold freez
 
 输出图片: 
 
-![](./ComfyUI_01046_.png)
+![](./SC_canny_one.png)
 
 
 

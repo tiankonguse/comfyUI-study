@@ -91,7 +91,7 @@ scheduler: normal
 输入图片：
 
 
-![](./ComfyUI_01484_.png)
+![](./unclip_one.png)
 
 
 
@@ -101,7 +101,7 @@ scheduler: normal
 输出图片与输入图片完全无关。  
 
 
-![](./ComfyUI_01574_.png)
+![](./unclip_two.png)
 
 
 
@@ -111,7 +111,7 @@ scheduler: normal
 输出图片：
 
 
-![](./ComfyUI_01566_.png)
+![](./unclip_three.png)
 
 
 ### aesthetic-unclip-s0.75-n0.3
@@ -127,7 +127,7 @@ scheduler: normal
 输出图片：
 
 
-![](./ComfyUI_01571_.png)
+![](./unclip_four.png)
 
 
 

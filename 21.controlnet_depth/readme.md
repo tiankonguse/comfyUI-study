@@ -78,6 +78,7 @@ streamlined,special form building,white wall,curtain wall,window,indoor warm lig
 ### 输出：
 
 ![](./ComfyUI_01739_.png)
+![](./controlnet_depth_one.png)
 
 
 ## 参考

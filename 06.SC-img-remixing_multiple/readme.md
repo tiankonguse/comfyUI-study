@@ -21,20 +21,20 @@
 
 ### 手向下
 
-![](./ComfyUI_01041_.png)
+![](./img_remixing_multiple_one.png)
 
 
 ### 手放膝盖上
 
 
-![](./ComfyUI_01042_.png)
+![](./img_remixing_multiple_two.png)
 
 
 
 ### 手放腿上
 
 
-![](./ComfyUI_01043_.png)
+![](./img_remixing_multiple_three.png)
 
 
 
